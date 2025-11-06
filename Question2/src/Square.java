@@ -1,4 +1,4 @@
-// Square.java
+
 // Another concrete class implementing Shape.
 
 public class Square implements Shape {

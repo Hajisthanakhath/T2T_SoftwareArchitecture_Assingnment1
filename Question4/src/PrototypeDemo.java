@@ -1,4 +1,4 @@
-// PrototypeDemo.java
+
 // Demonstrates cloning a Document object using the Prototype Pattern.
 
 public class PrototypeDemo {

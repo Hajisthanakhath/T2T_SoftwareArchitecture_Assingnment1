@@ -1,4 +1,4 @@
-// LightButton.java
+
 // Concrete Button for Light Theme
 
 public class LightButton implements Button {

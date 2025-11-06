@@ -1,4 +1,4 @@
-// DarkCheckbox.java
+
 // Concrete Checkbox for Dark Theme
 
 public class DarkCheckbox implements Checkbox {

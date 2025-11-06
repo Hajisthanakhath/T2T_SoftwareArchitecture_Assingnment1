@@ -1,4 +1,4 @@
-// Circle.java
+
 // Concrete class that implements the Shape interface.
 
 public class Circle implements Shape {

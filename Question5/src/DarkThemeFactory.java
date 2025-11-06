@@ -1,4 +1,4 @@
-// DarkThemeFactory.java
+
 // Concrete Factory that creates Dark Theme UI Components
 
 public class DarkThemeFactory implements UIThemeFactory {

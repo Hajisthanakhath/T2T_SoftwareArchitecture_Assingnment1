@@ -1,4 +1,4 @@
-// FactoryMethodDemo.java
+
 // Demonstrates the Factory Method Pattern by creating different shapes.
 
 public class FactoryMethodDemo {

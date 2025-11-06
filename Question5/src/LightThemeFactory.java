@@ -1,4 +1,4 @@
-// LightThemeFactory.java
+
 // Concrete Factory that creates Light Theme UI Components
 
 public class LightThemeFactory implements UIThemeFactory {

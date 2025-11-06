@@ -1,4 +1,4 @@
-// BuilderPatternDemo.java
+
 // Demonstrates building different Computer objects using the Builder Pattern.
 
 public class BuilderPatternDemo {

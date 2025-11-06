@@ -1,4 +1,4 @@
-// LightCheckbox.java
+
 // Concrete Checkbox for Light Theme
 
 public class LightCheckbox implements Checkbox {

@@ -1,4 +1,4 @@
-// ShapeFactory.java
+
 // Factory class that creates Shape objects based on input.
 
 public class ShapeFactory {

@@ -1,4 +1,4 @@
-// AbstractFactoryDemo.java
+
 // Demonstrates the Abstract Factory Pattern based on user-selected theme.
 
 public class AbstractFactoryDemo {

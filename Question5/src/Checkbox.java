@@ -1,4 +1,4 @@
-// Checkbox.java
+
 // Product Interface 2: All checkboxes must implement this
 
 public interface Checkbox {

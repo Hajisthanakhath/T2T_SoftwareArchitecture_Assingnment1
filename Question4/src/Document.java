@@ -1,4 +1,4 @@
-// Document.java
+
 // Demonstrates the Prototype Pattern by implementing deep cloning.
 
 public class Document implements Cloneable {

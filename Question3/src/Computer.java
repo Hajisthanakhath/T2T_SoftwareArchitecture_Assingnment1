@@ -1,4 +1,4 @@
-// Computer.java
+
 // Implements the Builder Pattern using a static nested Builder class.
 
 public class Computer {

@@ -1,4 +1,4 @@
-// SingletonDemo.java
+
 // This class demonstrates the Singleton behavior of the Logger class.
 
 public class SingletonDemo {
@@ -19,9 +19,9 @@ public class SingletonDemo {
 
         // Compare the two references to prove they refer to the same object
         if (logger1 == logger2) {
-            System.out.println("✅ Both logger1 and logger2 refer to the SAME instance.");
+            System.out.println("Both logger1 and logger2 refer to the SAME instance.");
         } else {
-            System.out.println("❌ Different instances exist.");
+            System.out.println("Different instances exist.");
         }
     }
 }

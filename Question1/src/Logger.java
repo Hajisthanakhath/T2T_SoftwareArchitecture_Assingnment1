@@ -1,8 +1,8 @@
-// Logger.java
+
 // This class implements the Singleton Pattern using the Bill Pugh Inner Static Class method.
 
-import java.text.SimpleDateFormat;   // Used to format the timestamp
-import java.util.Date;               // Used to get the current time
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 // Public Logger class so other classes (like SingletonDemo) can use it
 public class Logger {
@@ -27,7 +27,7 @@ public class Logger {
     // Method that prints a message with a timestamp
     public void log(String message) {
 
-        // Create a timestamp in the format: 2025-11-03 21:45:22
+
         String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
                 .format(new Date());
 
