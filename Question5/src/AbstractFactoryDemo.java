@@ -1,28 +1,26 @@
-
-// Demonstrates the Abstract Factory Pattern based on user-selected theme.
+// AbstractFactoryDemo.java
+// Demonstrates selecting a theme and generating UI components from the chosen factory.
 
 public class AbstractFactoryDemo {
+
     public static void main(String[] args) {
 
-        // Suppose the user selected "dark" theme
-        String userTheme = "dark";
-
-        // Get the correct factory based on theme
+        String selectedTheme = "Light";  // Change to "dark" to test the other family
         UIThemeFactory factory;
 
-        if (userTheme.equalsIgnoreCase("light")) {
+        // Choose which factory to use based on theme
+        if (selectedTheme.equalsIgnoreCase("light")) {
             factory = new LightThemeFactory();
         } else {
             factory = new DarkThemeFactory();
         }
 
-        // Create UI components using the selected factory
+        // Create UI elements
         Button button = factory.createButton();
         Checkbox checkbox = factory.createCheckbox();
 
-        // Use the components
+        // Use them
         button.paint();
         checkbox.check();
     }
 }
-

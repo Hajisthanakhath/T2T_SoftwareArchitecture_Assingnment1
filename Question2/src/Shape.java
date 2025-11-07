@@ -1,6 +1,7 @@
 
-// This is the main interface for all shapes used in the Factory Method Pattern.
+// This interface represents a general shape.
+// Every shape that the factory creates must implement this.
 
 public interface Shape {
-    void draw();  // Each shape will provide its own implementation of draw()
+    void draw();  // Every shape must have its own way of drawing
 }

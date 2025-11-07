@@ -1,7 +1,7 @@
 
-// Product Interface 1: All buttons must implement this
+// Common interface for all button types.
 
 public interface Button {
-    void paint();   // Each theme will give different implementation
+    void paint();
 }
 

@@ -6,13 +6,13 @@ public class Document implements Cloneable {
     private String title;
     private String content;
 
-    // Constructor to initialize fields
+    // Constructor to create a new document
     public Document(String title, String content) {
         this.title = title;
         this.content = content;
     }
 
-    // Getter methods (optional, for displaying data)
+    // Getter methods  to view data (optional, for displaying data)
     public String getTitle() {
         return title;
     }
@@ -34,8 +34,8 @@ public class Document implements Cloneable {
     @Override
     public Document clone() {
         try {
-            // super.clone() gives a shallow copy,
-            // but since we only have primitive/String fields, this becomes deep enough.
+            // super.clone() returns a copy of the current object
+            // Since we only have Strings (immutable), this acts like a deep copy
             return (Document) super.clone();
         } catch (CloneNotSupportedException e) {
             System.out.println("Cloning not supported!");

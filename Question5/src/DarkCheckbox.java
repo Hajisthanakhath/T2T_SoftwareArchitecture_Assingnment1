@@ -1,5 +1,5 @@
 
-// Concrete Checkbox for Dark Theme
+// Dark theme checkbox implementation.
 
 public class DarkCheckbox implements Checkbox {
     @Override

@@ -1,5 +1,6 @@
 
-// Another concrete class implementing Shape.
+// Represents a Square and implements the Shape interface.
+
 
 public class Square implements Shape {
 

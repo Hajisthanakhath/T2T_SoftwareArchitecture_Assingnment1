@@ -1,10 +1,10 @@
 
-// Concrete Button for Dark Theme
+// Dark theme version of a Button
 
 public class DarkButton implements Button {
     @Override
     public void paint() {
-        System.out.println("Rendering Dark Theme Button");
+        System.out.println("Painting a Dark Theme Button");
     }
 }
 

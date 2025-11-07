@@ -7,13 +7,15 @@ import java.util.Date;
 // Public Logger class so other classes (like SingletonDemo) can use it
 public class Logger {
 
-    // Private constructor prevents creation of Logger objects from outside this class
-    private Logger() {
+    // The constructor is private so no one else can create the Logger object.
+    private Logger()  {
         System.out.println("Logger initialized...");   // Shown only once → proves Singleton
     }
+    // This message will appear only ONCE,
+    // proving that only one Logger object is created.
 
-    // Static inner class that holds the SINGLE instance of Logger
-    // It is loaded into memory only when getInstance() is called → lazy initialization
+    // This is a special inner class. It will hold our one and only Logger object.
+    // The beauty is: this inner class loads only when someone calls getInstance().
     private static class LoggerHolder {
         private static final Logger INSTANCE = new Logger();  // The one and only Logger object
     }
@@ -24,10 +26,10 @@ public class Logger {
         return LoggerHolder.INSTANCE;   // Always returns the same instance
     }
 
-    // Method that prints a message with a timestamp
+    // This method prints a message along with the current date and time.
     public void log(String message) {
 
-
+        // Prepare a timestamp in a readable format.
         String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
                 .format(new Date());
 

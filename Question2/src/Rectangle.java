@@ -1,6 +1,5 @@
 
-// Another implementation of the Shape interface.
-
+/// Represents a Rectangle and provides its own drawing behavior.
 public class Rectangle implements Shape {
 
     @Override

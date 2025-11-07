@@ -1,15 +1,15 @@
 
-// Implements the Builder Pattern using a static nested Builder class.
+// This class uses the Builder Pattern to create Computer objects step-by-step.
 
 public class Computer {
 
-    // -------- Computer Fields --------
+    // These are the properties of a Computer-
     private String CPU;
     private int RAM;
     private int storage;
     private String graphicsCard;
 
-    // Private constructor to force object creation only through Builder
+    // Private constructor: only the Builder can create Computer objects
     private Computer(Builder builder) {
         this.CPU = builder.CPU;
         this.RAM = builder.RAM;
@@ -17,7 +17,7 @@ public class Computer {
         this.graphicsCard = builder.graphicsCard;
     }
 
-    // Display computer details
+    // Simple method to show the Computer configuration
     public void showConfig() {
         System.out.println("CPU: " + CPU);
         System.out.println("RAM: " + RAM + "GB");
@@ -26,7 +26,7 @@ public class Computer {
         System.out.println();
     }
 
-    // -------- Static Nested Builder Class --------
+    // Builder class starts here
     public static class Builder {
 
         // Same fields as Computer
@@ -35,10 +35,11 @@ public class Computer {
         private int storage;
         private String graphicsCard;
 
-        // Setter for CPU
+        // Methods to set each field
+        // Each method returns "this" to support method chaining
         public Builder setCPU(String CPU) {
             this.CPU = CPU;
-            return this;   // method chaining
+            return this;   // allows chaining like setCPU().setRAM()
         }
 
         // Setter for RAM

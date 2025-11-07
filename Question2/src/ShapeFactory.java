@@ -1,5 +1,6 @@
 
-// Factory class that creates Shape objects based on input.
+// This class contains the Factory Method: getShape()
+// Based on the input, it decides which shape object to create.
 
 public class ShapeFactory {
 
@@ -7,24 +8,24 @@ public class ShapeFactory {
     public Shape getShape(String shapeType) {
 
         if (shapeType == null) {
-            return null;    // return nothing if input is null
+            return null;    // No type? Then nothing to create.
         }
 
         // Convert to uppercase to avoid case sensitivity issues
         switch (shapeType.toUpperCase()) {
 
             case "CIRCLE":
-                return new Circle();
+                return new Circle();    // Create a Circle
 
             case "RECTANGLE":
-                return new Rectangle();
+                return new Rectangle();    // Create a rectangle
 
             case "SQUARE":
-                return new Square();
+                return new Square();    // Create a square
 
             default:
                 System.out.println("Unknown shape type: " + shapeType);
-                return null;
+                return null; //invalid id input
         }
     }
 }

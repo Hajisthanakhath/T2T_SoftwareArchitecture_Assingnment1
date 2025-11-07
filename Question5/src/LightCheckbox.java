@@ -1,5 +1,5 @@
 
-// Concrete Checkbox for Light Theme
+// Light theme checkbox implementation.
 
 public class LightCheckbox implements Checkbox {
     @Override

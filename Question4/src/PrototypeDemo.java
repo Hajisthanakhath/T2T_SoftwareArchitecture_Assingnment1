@@ -1,5 +1,5 @@
 
-// Demonstrates cloning a Document object using the Prototype Pattern.
+// This class shows how to clone a Document and proves that modifying the clone
 
 public class PrototypeDemo {
 
@@ -18,13 +18,14 @@ public class PrototypeDemo {
         clonedDoc.setTitle("Cloned Report");
         clonedDoc.setContent("This content belongs to the cloned document.");
 
-        // Show original document
+        // Print original document details
         System.out.println("Original Document:");
         System.out.println("Title: " + originalDoc.getTitle());
         System.out.println("Content: " + originalDoc.getContent());
         System.out.println();
 
-        // Show cloned document
+
+        // Print cloned document details
         System.out.println("Cloned Document:");
         System.out.println("Title: " + clonedDoc.getTitle());
         System.out.println("Content: " + clonedDoc.getContent());
